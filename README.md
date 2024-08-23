@@ -1,35 +1,49 @@
-# customers-frontend-vue
 
-This template should help get you started developing with Vue 3 in Vite.
+# Vue.js Customers Listing Frontend
 
-## Recommended IDE Setup
+This is a Vue.js application that provides a user interface for viewing customer data. The application fetches data from the Laravel backend API and displays it in a sortable, paginated table.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Prerequisites
 
-## Customize configuration
+- Node.js >= 12.x
+- npm
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Setup Instructions
 
-## Project Setup
+1. **Clone the Repository:**
 
-```sh
-npm install
-```
+   ```bash
+   git clone https://github.com/umerchohan8/customers-frontend-vue
+   cd customers-frontend-vue
+   ```
 
-### Compile and Hot-Reload for Development
+2. **Install Dependencies:**
 
-```sh
-npm run dev
-```
+   ```bash
+   npm install
+   ```
 
-### Compile and Minify for Production
+3. **Environment Setup:**
 
-```sh
-npm run build
-```
+   Define your API endpoint in apiUrl constant in src/config.js file:
 
-### Lint with [ESLint](https://eslint.org/)
+   ```bash
+   export const apiUrl = 'http://localhost:8000/api';
+   ```
 
-```sh
-npm run lint
-```
+4. **Run the Application:**
+
+   Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   The application should now be accessible at your local endpoint.
+
+
+5. **Features:**
+
+   - **Sortable Table**: Click on the headers to sort the customer data.
+   - **Pagination**: Navigate through pages of customer data.
+   - **Dynamic Pie Charts**: Visual representation of customer scores.
